@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de preço</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+</head>
+
+<body class="vh-100 d-flex align-items-center position-relative">
+
+    <a href="menu.html" class="btn btn-outline-dark position-absolute top-0 end-0 m-3 ">Voltar</a>
+
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-md-4 mb-4 ms-md-5">
+                <div class="text-center mb-3">
+                    <img src="logo.png" alt="Logo" class="img-fluid" style="max-height: 80px;">
+                </div>
+
+                <h4 class="text-center mb-4">Cadastrar Alerta</h4>
+
+                <form id="formAlerta">
+
+                    <select class="form-control" id="idProduto" required>
+                        <option value="">Selecione um produto</option>
+                    </select>
+
+
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="valorDesejado" placeholder="Valor desejado"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="acao" id="notificar" value="notificar"
+                                required>
+                            <label class="form-check-label" for="notificar">Notificar</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="acao" id="comprar" value="comprar"
+                                required>
+                            <label class="form-check-label" for="comprar">Comprar</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-success w-100">Cadastrar</button>
+                    <button onclick="limparAlertas()" class="btn btn-outline-danger mt-3">Limpar Alertas</button>
+
+                </form>
+            </div>
+
+            <div class="col-md-7">
+                <h4 class="mb-3">Alertas Ativos</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Id produto</th>
+                                <th>Valor desejado</th>
+                                <th>Ação</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tabelaAlertas">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/alerta.js"></script>
+
+</body>
+
+</html>
