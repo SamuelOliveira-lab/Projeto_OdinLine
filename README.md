@@ -71,7 +71,7 @@ GET https://api-odinline.odiloncorrea.com/usuario/{login}/{senha}/autenticar
 
 1. Clone o repositório:
  ```bash
-git clone https://github.com/SamuelOliveira-lab/NOME-DO-REPOSITORIO.git
+git clone https://github.com/SamuelOliveira-lab/Projeto_OdinLine.git
 
 Navegue até a pasta e abra o index.html com um navegador moderno (preferencialmente Chrome).
 
