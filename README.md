@@ -42,3 +42,62 @@ A aplicação usa **localStorage** para armazenar sessões, alertas e compras de
 
 ## 📂 Estrutura do Projeto
 
+📁 projeto/
+├── index.html # Tela de login
+├── menu.html # Menu principal após login
+├── alerta.html # Cadastro e visualização de alertas
+├── compras.html # Histórico de compras
+├── js/
+│ ├── index.js # Validação e autenticação do login
+│ ├── menu.js # Renderização da saudação e logout
+│ ├── alerta.js # Lógica de alertas, compras e notificações
+│ └── compras.js # Renderização do histórico de compras
+├── logo.png # Logo da aplicação
+
+---
+## 🔐 API de Autenticação
+
+- Endpoint utilizado:
+GET https://api-odinline.odiloncorrea.com/usuario/{login}/{senha}/autenticar
+
+- Retorna um objeto `usuario` com os campos:
+- `id`, `login`, `nome`, `chave`, etc.
+- Usuários não autenticados são redirecionados automaticamente ao `index.html`.
+
+---
+
+## 🛠️ Como executar localmente
+
+1. Clone o repositório:
+ ```bash
+git clone https://github.com/SamuelOliveira-lab/NOME-DO-REPOSITORIO.git
+
+Navegue até a pasta e abra o index.html com um navegador moderno (preferencialmente Chrome).
+
+Insira as credenciais válidas da plataforma OdinLine.
+
+Após login, utilize o menu para navegar entre as funcionalidades.
+
+🔔 Para usar as notificações, permita o envio de notificações pelo navegador quando solicitado.
+
+⚠️ Observações
+Este sistema não permite o cadastro de novos usuários — apenas autenticação de quem já está registrado na plataforma OdinLine.
+
+A API utilizada é de terceiros (acadêmica), portanto eventuais indisponibilidades podem afetar o funcionamento da aplicação.
+
+Os dados de alertas e compras são mantidos apenas no localStorage, ou seja, não persistem entre navegadores ou em modo anônimo.
+
+🧠 Aprendizados
+Durante o desenvolvimento, foram aplicados conceitos de:
+
+Integração com APIs REST via Fetch
+
+Manipulação de DOM com JavaScript
+
+Validação de formulários com jQuery Validation
+
+Uso do localStorage para persistência temporária
+
+Boas práticas com responsividade via Bootstrap
+
+Gerenciamento de sessões no front-end
