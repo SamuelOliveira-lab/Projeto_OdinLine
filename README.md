@@ -42,11 +42,11 @@ A aplicação usa **localStorage** para armazenar sessões, alertas e compras de
 
 ## 📂 Estrutura do Projeto
 
-📁 projeto/
-├── index.html # Tela de login
-├── menu.html # Menu principal após login
-├── alerta.html # Cadastro e visualização de alertas
-├── compras.html # Histórico de compras
+- index.html # Tela de login
+- menu.html # Menu principal após login
+- alerta.html # Cadastro e visualização de alertas
+─ compras.html # Histórico de compras
+
 ├── js/
 │ ├── index.js # Validação e autenticação do login
 │ ├── menu.js # Renderização da saudação e logout
