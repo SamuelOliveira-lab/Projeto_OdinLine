@@ -49,11 +49,11 @@ A aplicação usa **localStorage** para armazenar sessões, alertas e compras de
 
 ├── js/
  
- index.js # Validação e autenticação do login
- menu.js # Renderização da saudação e logout
- alerta.js # Lógica de alertas, compras e notificações
- compras.js # Renderização do histórico de compras
- logo.png # Logo da aplicação
+ - index.js # Validação e autenticação do login
+ - menu.js # Renderização da saudação e logout
+ - alerta.js # Lógica de alertas, compras e notificações
+ - compras.js # Renderização do histórico de compras
+ - logo.png # Logo da aplicação
 
 ---
 ## 🔐 API de Autenticação
