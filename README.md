@@ -1,5 +1,7 @@
 # 💻 Projeto: Autenticação e Gerenciamento de Alertas de Preço
 
+🔗 **Acesse o projeto online:** [https://samueloliveira-lab.github.io/Projeto_OdinLine/](https://samueloliveira-lab.github.io/Projeto_OdinLine/)
+
 Sistema web desenvolvido como exercício avaliativo da disciplina **Desenvolvimento de Sistemas** do curso de **Engenharia de Computação - CEFET-MG**, sob orientação do professor **Odilon Corrêa da Silva**.
 
 ## 📋 Descrição
